@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Layout quan he theo chieu ngang tuong ung moi hang-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Tieu de ung dung-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00F700"
+            android:gravity="center"
+            android:text="PHẦN MỀM TÍNH NHANH CÁC ĐẠI LƯỢNG CHƯƠNG III\nCƠ ỨNG DỤNG"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma_x"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_x=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma_x"
+                android:layout_toStartOf="@id/unit1"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma_y"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_y=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma_y"
+                android:layout_toStartOf="@id/unit2"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/tau_xy"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\tau_{xy}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextTau_xy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tau_xy"
+                android:layout_toStartOf="@id/unit3"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/alpha"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\alpha=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/alpha"
+                android:layout_toStartOf="@id/unit4"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\degree \(degree\)$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/E"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$E=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/E"
+                android:layout_toStartOf="@id/unit5"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit5"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/mu"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\mu=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextMu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/mu"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonOK"
+            android:text="OK"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@android:dimen/app_icon_size"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonClear"
+            android:text="CLEAR"
+            android:textColor="@android:color/holo_blue_dark"
+            android:background="@android:color/holo_red_dark"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma_u"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_u=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma_u"
+                android:layout_toStartOf="@id/unit6"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit6"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma_v"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_v=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma_v"
+                android:layout_toStartOf="@id/unit7"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit7"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/tau_uv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\tau_{uv}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextTau_uv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tau_uv"
+                android:layout_toStartOf="@id/unit8"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit8"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/tau_vu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\tau_{vu}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextTau_vu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tau_vu"
+                android:layout_toStartOf="@id/unit9"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit9"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma_max"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_{max}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma_max"
+                android:layout_toStartOf="@id/unit10"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit10"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma_min"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_{min}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma_min"
+                android:layout_toStartOf="@id/unit11"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit11"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_1=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma1"
+                android:layout_toStartOf="@id/unit12"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit12"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_2=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma2"
+                android:layout_toStartOf="@id/unit13"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit13"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_3=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma3"
+                android:layout_toStartOf="@id/unit14"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit14"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/tau_max"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\tau_{max}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextTau_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tau_max"
+                android:layout_toStartOf="@id/unit15"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit15"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/tau_min"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\tau_{min}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextTau_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tau_min"
+                android:layout_toStartOf="@id/unit16"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit16"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/alpha1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\alpha_1=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextAlpha1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/alpha1"
+                android:layout_toStartOf="@id/unit17"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit17"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\degree \(degree\)$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/alpha2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\alpha_2=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextAlpha2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/alpha2"
+                android:layout_toStartOf="@id/unit18"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit18"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\degree \(degree\)$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/alpha_tau_max"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\alpha_{\\tau_{max}}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextAlpha_tau_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/alpha_tau_max"
+                android:layout_toStartOf="@id/unit19"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit19"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\degree \(degree\)$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/alpha_tau_min"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\alpha_{\\tau_{min}}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextAlpha_tau_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/alpha_tau_min"
+                android:layout_toStartOf="@id/unit20"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit20"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\degree \(degree\)$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/c_point"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$C\($"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/c_point"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/tau_c"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@id/editTextSigma_c"
+                app:setClickable="true"
+                app:setText="$;0\)$"
+                app:setTextColor="#00574B" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/r"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$R=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/r"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/p_point"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$P\($"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/p_point"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/semicolon"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@id/editTextSigma_p"
+                app:setClickable="true"
+                app:setText="$;$"
+                app:setTextColor="#00574B" />
+
+            <EditText
+                android:id="@+id/editTextTau_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/semicolon"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:maxLength="20"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/parentheses"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/editTextTau_p"
+                app:setClickable="true"
+                app:setText="$\)$"
+                app:setTextColor="#00574B" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="Ứng suất tương đương theo thuyết bền III - Tresca"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma_td3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_{tđ_3}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_td3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma_td3"
+                android:layout_toStartOf="@id/unit21"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit21"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="Ứng suất tương đương theo thuyết bền IV - Von-Mises"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/sigma_td4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\sigma_{tđ_4}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextSigma_td4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sigma_td4"
+                android:layout_toStartOf="@id/unit22"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit22"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="Định luật Hooke\nBiến dạng dài theo phương x, y, z"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/epsilon_x"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\varepsilon_x=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextEpsilon_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/epsilon_x"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/epsilon_y"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\varepsilon_y=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextEpsilon_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/epsilon_y"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/epsilon_z"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\varepsilon_z=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextEpsilon_z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/epsilon_z"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="Biến dạng dài theo phương u, v"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/epsilon_u"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\varepsilon_u=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextEpsilon_u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/epsilon_u"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/epsilon_v"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\varepsilon_v=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextEpsilon_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/epsilon_v"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="Biến dạng dài theo phương chính"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/epsilon1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\varepsilon_1=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextEpsilon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/epsilon1"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/epsilon2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\varepsilon_2=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextEpsilon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/epsilon2"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/epsilon3"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\varepsilon_3=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextEpsilon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/epsilon3"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="Phân tố trượt thuần túy\nBiến dạng góc"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/g"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$G=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/g"
+                android:layout_toStartOf="@id/unit23"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/unit23"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$kN\/cm^2$"
+                app:setTextColor="#00574B" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/gamma_xy"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\gamma_{xy}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextGamma_xy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/gamma_xy"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/gamma_uv"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\gamma_{uv}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextGamma_uv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/gamma_uv"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/gamma_vu"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\gamma_{vu}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextGamma_vu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/gamma_vu"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="Biến dạng góc cực đại"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/gamma_tau_max"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\gamma_{\\tau_{max}}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextGamma_tau_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/gamma_tau_max"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <katex.hourglass.in.mathlib.MathView
+                android:id="@+id/gamma_tau_min"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:setClickable="true"
+                app:setText="$\\gamma_{\\tau_{min}}=$"
+                app:setTextColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editTextGamma_tau_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/gamma_tau_min"
+                android:layout_alignParentEnd="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_bright"
+            android:textStyle="italic"
+            android:text="Design by Nghia"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
